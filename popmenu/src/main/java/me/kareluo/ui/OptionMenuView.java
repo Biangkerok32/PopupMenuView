@@ -58,6 +58,13 @@ public class OptionMenuView extends LinearLayout implements PopLayout.OnBulgeCha
         mOptionMenus = new ArrayList<>();
     }
 
+    public void addOptionMenu(OptionMenu menu) {
+        if (menu != null){
+            mOptionMenus.add(menu);
+            notifyMenusChange();
+        }
+    }
+
     public void setOptionMenus(List<OptionMenu> optionMenus) {
         mOptionMenus.clear();
         if (optionMenus != null) {

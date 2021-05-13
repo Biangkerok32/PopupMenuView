@@ -6,10 +6,7 @@ import android.graphics.Rect;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 
 import java.util.List;
 
@@ -51,6 +48,13 @@ public class PopupMenuView extends PopupView implements OptionMenuView.OnOptionM
     public void inflate(int menuRes, Menu menu) {
         mOptionMenuView.inflate(menuRes, menu);
         measureContentView();
+    }
+
+    public void addMenuItems(OptionMenu optionMenu) {
+        if (optionMenu != null){
+            mOptionMenuView.addOptionMenu(optionMenu);
+            measureContentView();
+        }
     }
 
     public void setMenuItems(List<OptionMenu> optionMenus) {
