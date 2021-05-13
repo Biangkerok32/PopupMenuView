@@ -9,28 +9,6 @@
 
 ![预览图片](/screenshot/preview_image.png)
 
-# Demo
-安装 [apk](https://www.pgyer.com/menu) 文件预览效果，或者通过下面二维码去下载安装：
-
-![DEMO下载二维码](/screenshot/code.png)
-
-# Usage
-
-Use Gradle:
-``` java
-compile 'me.kareluo.ui:popmenu:1.1.0'
-```
-
-Or Maven:
-``` maven
-<dependency>
-  <groupId>me.kareluo.ui</groupId>
-  <artifactId>popmenu</artifactId>
-  <version>1.1.0</version>
-  <type>pom</type>
-</dependency>
-```
-
 # Sample
 
 `PopupMenuView`可以通过menu布局文件加载出预先准备的菜单：
